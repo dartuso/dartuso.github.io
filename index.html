@@ -4,19 +4,72 @@
     <style>  
     <link rel="stylesheet" href="w3.css">
     <title>Daniel Artuso Website</title>
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #f1f1f1;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+    color: white;
+}
     </style>
 </head>
 <body>
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <div class="w3-container w3-center w3-light-grey">
      <h1>This is a website</h1>
-
 </div>
-<div class="w3-panel" >
 
-    <p>You are now smarter</p>
-    </div>
-
+<nav>
+<ul class="w3-navbar w3-large w3-teal w3-center-align">
+  <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+    <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+  </li>
+  <li><a href="#">Home</a></li>
+  <li class="w3-hide-small"><a href="https://www.instagram.com/daniel.artuso/">Instagram</a></li>
+  <li class="w3-hide-small"><a href="https://twitter.com/dartuso1">Twitter</a></li>
+  <li class="w3-hide-small"><a href="https://github.com/dartuso">Github</a></li>
+</ul>
+<div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+  <ul class="w3-navbar w3-left-align w3-large w3-teal">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="https://twitter.com/dartuso1">Twitter</a></li>
+    <li><a href="https://github.com/dartuso">Github</a></li>
+  </ul>
+</div>
+    <script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</nav>
+    <p class="w3-panel w3-blue" >
+This website is made by Daniel Artuso.
+    </p>
+<p>
+    
+    </p>
 
 </body>
 </html>
