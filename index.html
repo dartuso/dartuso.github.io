@@ -1,75 +1,210 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-    <style>  
-    <link rel="stylesheet" href="w3.css">
-    <title>Daniel Artuso Website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Daniel Artuso Page</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 16px Helvetica, Sans-Serif;
+            line-height: 24px;
+            background: url(images/noise.jpg);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #page-wrap {
+            width: 800px;
+            margin: 40px auto 60px;
+        }
+
+        #pic {
+            float: right;
+            margin: -30px 0 0 0;
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            padding: 0 0 16px 0;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: -2px;
+            border-bottom: 1px solid #999;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0 0 6px 0;
+            position: relative;
+        }
+
+        h2 span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            font-family: Georgia, Serif,serif;
+            font-size: 16px;
+            color: #999;
+            font-weight: normal;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px dotted #999;
+        }
+
+        a:hover {
+            border-bottom-style: solid;
+            color: black;
+        }
+
         ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-}
+            margin: 0 0 32px 17px;
+        }
 
-li a {
-    display: block;
-    color: #f1f1f1;
-    padding: 8px 16px;
-    text-decoration: none;
-}
+        #objective {
+            width: 500px;
+            float: left;
+        }
 
-li a.active {
-    background-color: #4CAF50;
-    color: white;
-}
+        #objective p {
+            font-family: Georgia, Serif,serif;
+            font-style: italic;
+            color: #666;
+        }
 
-li a:hover:not(.active) {
-    background-color: #4CAF50;
-    color: white;
-}
+        dt {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 150px;
+            float: left;
+            height: 100px;
+            border-right: 1px solid #999;
+        }
+
+        dd {
+            width: 600px;
+            float: right;
+        }
+
+        dd.clear {
+            float: none;
+            margin: 0;
+            height: 15px;
+        }
     </style>
 </head>
+
 <body>
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <div class="w3-container w3-center w3-light-grey">
-     <h1>This is a website</h1>
-</div>
 
-<nav>
-<ul class="w3-navbar w3-large w3-teal w3-center-align">
-  <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
-    <a href="javascript:void(0);" onclick="myFunction()">☰</a>
-  </li>
-  <li><a href="#">Home</a></li>
-  <li class="w3-hide-small"><a href="https://www.instagram.com/daniel.artuso/">Instagram</a></li>
-  <li class="w3-hide-small"><a href="https://twitter.com/dartuso1">Twitter</a></li>
-  <li class="w3-hide-small"><a href="https://github.com/dartuso">Github</a></li>
-</ul>
-<div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
-  <ul class="w3-navbar w3-left-align w3-large w3-teal">
-    <li><a href="#">Link 1</a></li>
-    <li><a href="https://twitter.com/dartuso1">Twitter</a></li>
-    <li><a href="https://github.com/dartuso">Github</a></li>
-  </ul>
-</div>
-    <script>
-function myFunction() {
-    var x = document.getElementById("demo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-</nav>
-    <p class="w3-panel w3-blue" >
-This website is made by Daniel Artuso.
-    </p>
-<p>
-    
-    </p>
+<div id="page-wrap">
 
+    <img src="./images/me.jpg" alt="Photo of me!" id="pic"/>
+
+    <div id="contact-info" class="vcard">
+        <h1 class="fn">Daniel Artuso</h1>
+        <p>
+            Cell: <span class="tel">587-226-0130</span><br/>
+            Email: <a class="email" href="mailto:daniel.artuso1@gmail.com">daniel.artuso1@gmail.com</a>
+            Github: <a href="https://github.com/dartuso">github.com/dartuso</a>
+        </p>
+    </div>
+
+    <div id="objective">
+        <p>
+            I am an outgoing and energetic computer science student at University of Calgary.
+            I am really interested in software development, cybersecurity, and devops.
+            Currently looking for an internship starting this summer.
+        </p>
+    </div>
+
+    <div class="clear"></div>
+    <dl>
+        <dd class="clear"></dd>
+
+        <dt>Education</dt>
+        <dd>
+            <h2>University of Calgary</h2>
+            <p><strong>Major:</strong> Computer Science<br/>
+                2018 to Present<br/>
+            <h2>Mount Royal University</h2>
+            <p><strong>Major:</strong> Computer Science<br/>
+                2016 to 2018<br/>
+        </dd>
+
+        <dd class="clear"></dd>
+
+        <dt>Skills</dt>
+        <dd>
+            <h2>Office skills</h2>
+            <p>Communication, planning, problem solving, punctual, critical thinking</p>
+
+            <h2>Technical skills</h2>
+            <p>C++, Java, Python, SQL, Android dev, RSA Archer GRC, Microfocus Fortify, Microsoft Azure, Microsoft productivity software (Word, Excel, etc),
+                Windows, Linux</p>
+        </dd>
+
+        <dd class="clear"></dd>
+
+        <dt>Experience</dt>
+        <dd>
+            <h2>Chevron Canada<span>Cybersecurity Intern - Calgary, AB - Janu to Dec 2019</span></h2>
+            <ul>
+                <li>Managed cybersecurity and data privacy policy, incidents and planning, working with base business
+                    and IT stakeholders
+                </li>
+                <li>Automate and improve processes via scripting and development of new tools, increasing work
+                    efficiency while maintaining compliance and audit
+                </li>
+                <li>Worked on transitioning to Microsoft Azure hosted applications while maintaining security and
+                    compliance with NIST standards
+                </li>
+            </ul>
+
+            <h2>Alberta Infrastructure<span> Maintenance Service Worker - Summer 17-18</span></h2>
+            <ul>
+                <li>Ensured upkeep of the Calgary Correctional Centre, Calgary Remand Center and the Calgary Young
+                    Offenders Centre by painting, cleaning and repairing the facilities.
+                </li>
+                <li>Assisted various tradesman (carpenters, plumbers, electrician, and steam engineers) collaborating
+                    with another summer student to complete work orders.
+                </li>
+                <li>Worked on multiple projects simultaneously ensuring timely completion.</li>
+            </ul>
+        </dd>
+
+        <dd class="clear"></dd>
+
+        <dt>Hobbies</dt>
+        <dd>Amateur basketball player, Snowboarding, Scuba diving,</dd>
+
+        <dd class="clear"></dd>
+
+        <dt>References</dt>
+        <dd>Available on request</dd>
+        <dd class="clear"></dd>
+    </dl>
+    <div class="clear"></div>
+</div>
 </body>
 </html>
